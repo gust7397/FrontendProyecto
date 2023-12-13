@@ -1,0 +1,378 @@
+@media screen and (max-width: 430px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    color: #1d1d20;
+  }
+
+  .cerrar-menu {
+    color: #85838d;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f4f7;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li a {
+    color: #85838d;
+  }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.icon-container i:hover {
+  color: #df55ac;
+}
+
+  .icon-container i {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .icon-container i1 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+/* Primer Background */
+
+  .contenedor-tex {
+    padding: 50px;
+  }
+
+  .contenedor-tex h2, .contenedor-tex .IN {
+    font-size: 24px;
+  }
+
+  .contenedor-tex p {
+    font-size: 0.75rem;
+  }
+
+  .btn-link {
+    height: 30px;
+    width: 120px;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+/* Caja de Iconos */
+.box{
+    margin-bottom: 50px;
+}
+
+/* Acordion */
+.container4 {
+    /* Estilos específicos para pantallas de 430px o menos */
+    flex-direction: column; /* Cambio de la dirección de flex a columna */
+    align-items: center; /* Alineación centrada */
+  }
+
+  .container4 .content-container4 {
+    max-width: none; /* Ancho completo */
+    text-align: center; /* Texto centrado */
+  }
+
+  .container4 .image-container4 img {
+    max-height: none; /* Altura completa */
+  }
+
+  .container4 .accordion-btn {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* quinta parte 2° location con slider */
+.slider-container {
+    /* Estilos específicos para pantallas de 430px o menos */
+    height: 70vh; /* Ajusta según tus necesidades */
+  }
+
+  .slide img {
+    height: 100%; /* Altura completa del contenedor */
+  }
+
+
+/*sexta parte couching staff*/
+
+
+  .container6 {
+    padding-left: 0; /* Eliminar el padding para centrar */
+    text-align: center; /* Añadir text-align para centrar el texto */
+  }
+
+  .container6-text {
+    width: 100%; /* Ocupar el ancho completo */
+    text-align: center; /* Centrar el texto */
+  }
+
+
+
+/*septima parte parte fichas*/
+.contenedor-7 {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+
+  .contenedor7-1,
+  .contenedor7-2,
+  .contenedor7-3 {
+    margin-bottom: 1rem; /* Espacio entre elementos en dispositivos móviles */
+  }
+
+  .btn-link {
+    width: 100%; /* Ocupar el ancho completo en dispositivos móviles */
+  }
+
+/*octava parte 2° location*/
+
+
+  .container8 {
+    align-items: center; /* Centrar contenido en dispositivos móviles */
+    text-align: center; /* Centrar texto en dispositivos móviles */
+    padding: 50px; /* Ajustar el padding para pantallas más pequeñas */
+  }
+
+  .container8 h2 {
+    font-size: 40px; /* Ajustar el tamaño del título en dispositivos móviles */
+  }
+
+  .container8 h3 {
+    font-size: 24px; /* Ajustar el tamaño del subtítulo en dispositivos móviles */
+  }
+
+  .container8 h4 {
+    font-size: 16px; /* Ajustar el tamaño del texto en dispositivos móviles */
+  }
+
+
+  /*novena parte galeria*/
+
+  .galeria .foto {
+    width: 100%; /* Ajustar el ancho de las fotos en dispositivos móviles */
+  }
+
+  .galeria .foto:hover .img-hover {
+    transform: scale(1.1); /* Ajustar el escalado al hacer hover en dispositivos móviles */
+  }
+
+
+/*decima carrucel*/
+.itemCarrouselArrows {
+    padding: 10px; /* Ajustar el padding para pantallas más pequeñas */
+    font-size: 20px; /* Ajustar el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .itemCarrouselTarjeta h2 {
+    font-size: 28px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .itemCarrouselTarjeta h3 {
+    text-align: center;
+    font-size: 14px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .itemCarrouselTarjeta h4 {
+    font-size: 12px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+
+  /*onceavo avon*/
+  .galeria2 {
+    flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+  }
+
+  .galeria2 .tx {
+    padding-left: 0; /* Eliminar el relleno en dispositivos móviles */
+    text-align: center; /* Centrar el texto en dispositivos móviles */
+  }
+
+  .galeria2 .foto2 {
+    width: 80%; /* Ancho completo en dispositivos móviles */
+    margin-bottom: 20px; /* Espacio entre elementos en dispositivos móviles */
+  }
+
+  .encabezado11 h1 {
+    font-size: 28px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .galeria2 h4 {
+    font-size: 14px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+    padding-top: 20px; /* Espaciado superior en dispositivos móviles */
+    padding-bottom: 5px; /* Espaciado inferior en dispositivos móviles */
+  }
+
+  .galeria2 h2 {
+    font-size: 18px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+  .galeria2 i {
+    font-size: 24px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+  }
+
+
+/*doceavacards*/
+
+.contenedor12 {
+    height: auto; /* Ajustar la altura automáticamente en dispositivos móviles */
+  }
+
+  .contenedor12 img {
+    width: 100%; /* Hacer que las imágenes ocupen el ancho completo en dispositivos móviles */
+  }
+
+  .contenedor12 .lasCards {
+    flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+  }
+
+  .card12{
+    padding-bottom: 20px;
+  }
+
+  .encabezado12 h2 {
+    font-size: 28px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+    text-align: center;
+  }
+
+  .card12 h4 {
+    font-size: 14px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+    text-align: center;
+  }
+
+  .card12 h3 {
+    font-size: 18px; /* Ajuste en el tamaño de la fuente para pantallas más pequeñas */
+    text-align: center;
+  }
+
+
+/* YouTube responsive */
+  .contenedor-video {
+    width: 100%; /* Hacer que el contenedor de video ocupe el ancho completo en dispositivos móviles */
+    padding: 0 10px; /* Agregar un espacio de relleno a los lados en dispositivos móviles */
+  }
+
+  .video-youtube {
+    height: 250px; /* Reducir la altura del video en dispositivos móviles según sea necesario */
+  }
+
+
+/*trece formulario*/
+.contenedor13 {
+    flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+    height: auto;
+  }
+
+  .datos,
+  .mapa,
+  .phone,
+  .clock,
+  .email {
+    width: 100%; /* Hacer que los elementos ocupen el ancho completo en dispositivos móviles */
+  }
+
+  input[type="text"] {
+    width: 100%; /* Hacer que el campo de texto ocupe el ancho completo en dispositivos móviles */
+  }
+
+  input[type="submit"],
+  input[type="submit"]:hover {
+    width: 100%; /* Hacer que el botón de envío ocupe el ancho completo en dispositivos móviles */
+    margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+  }
+
+  .datos,
+  .mapa,
+  .phone,
+  .clock,
+  .email {
+    padding-top: 5%; /* Ajustar el espaciado superior en dispositivos móviles */
+  }
+
+
+/*footer*/
+  .footerb {
+    max-width: 100%; /* Ajustar ancho máximo para dispositivos móviles */
+    padding-top: 20px;
+  }
+
+  .logof {
+    max-width: 140px; /* Reducir el ancho máximo para dispositivos móviles */
+  }
+
+  .tx-footer span {
+    padding: 5px; /* Reducir el espacio entre los span */
+  }
+
+
+
+/*regreso*/
+
+.scroll-to-top {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .scroll-to-top i {
+    line-height: 40px;
+  }
+
+
+
+/*modal*/
+.modal {
+        padding: 10px; /* Reducir el espacio interno */
+        max-width: 90%; /* Ajustar el ancho máximo */
+    }
+
+    .close {
+        font-size: 40px; /* Reducir el tamaño del icono de cierre */
+        top: 5px;
+        right: 15px;
+    }
+
+
+
+
+
+}

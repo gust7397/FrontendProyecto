@@ -1,0 +1,1074 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Quicksand:wght@300&display=swap");
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --rosa: #df55ac;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f2f4f7;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 10rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a,
+.nav-list li .x {
+  text-decoration: none;
+  color: #85838d;
+  font-size: 13px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li .x:hover {
+  color: var(--rosa);
+}
+
+.nav-list li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  box-shadow: 0.5px 0.5px 2px black;
+  background-color: #f2f4f7;
+}
+
+.nav-list li:hover > ul {
+  display: block;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  background: #f2f4f7;
+}
+
+.nav-list li ul {
+  background: #f2f4f7;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.icon-container i,
+.icon-container i1 {
+  font-size: 20px;
+  margin: 14px;
+  transition: color 0.3s ease;
+}
+
+.icon-container i:hover,
+.icon-container i1:hover {
+  color: var(--rosa);
+}
+
+/* Primer Background */
+.contenedor {
+  background-image: url(../img/fitness_bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-tex {
+  padding: 300px;
+}
+
+.contenedor-tex h2,
+.contenedor-tex .IN {
+  color: white;
+  font-size: 70px;
+}
+
+.contenedor-tex p {
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+
+.btn-link {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  background: black;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: black;
+  background: #fff;
+  border: 1px solid black;
+}
+
+/* Segundo Texto */
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-color: #f2f4f7;
+}
+
+.sub-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.container2 h2,
+.container2 span {
+  margin: 10px;
+}
+
+.EXERCISE {
+  font-size: 2rem;
+}
+
+.Check {
+  font-size: 0.875rem;
+}
+
+/* Caja de Iconos */
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #f2f4f7;
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+  color: #f2f4f7;
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box i {
+  height: 8rem;
+  width: 8rem;
+  line-height: 8rem;
+  border-radius: 50%;
+  color: var(--rosa);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.box h4 {
+  font-size: 1.125rem;
+  color: #1d1d20;
+  margin-top: 0.5rem;
+}
+
+.box p {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+.box.animate {
+  transform: scale(1.1);
+}
+
+/* Acordion */
+.container4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  background: #f2f4f7;
+}
+
+.content-container4 h2 {
+  font-size: 36px;
+}
+
+.content-container4 p {
+  font-size: 15px;
+}
+
+.container4 .image-container4 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 40rem;
+}
+
+.container4 .content-container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 550px;
+}
+
+.container4 .accordion {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container4 .accordion i {
+  color: var(--rosa);
+}
+
+.container4 .accordion-btn {
+  width: 100%;
+  background-color: #f3f5f7;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.container4 .accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.container4 .accordion-btn.active + .accordion-content {
+  display: block;
+}
+
+.container4 .action-btn {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  padding: 10px 30px;
+  border: 2px solid #1c1c1c;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #1c1c1c;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container4 .action-btn:hover {
+  color: #1c1c1c;
+  background: #fff;
+}
+
+/* quinta parte 2° location con slider */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  height: 65vh;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/*sexta parte couching staff*/
+.container6 {
+  background-image: url("../img/fitness_bg3.jpg");
+  background-position: center;
+  height: 75vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 600px;
+}
+
+.container6 .container6-text {
+  padding: 0;
+}
+
+.container6-text i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 1%;
+}
+
+.container6-text i:hover {
+  color: var(--rosa);
+}
+
+.container6-text h3 {
+  font-size: 22 px;
+  color: #fff;
+}
+
+.container6-text h2 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.container6-text h4 {
+  font-size: 18px;
+  color: var(--rosa);
+}
+
+.container6-text span {
+  font-size: 12px;
+  color: #fff;
+}
+
+/*septima parte parte fichas*/
+
+.contenedor7 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contenedor-7 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding-bottom: 50px;
+}
+
+.contenedor7-1,
+.contenedor7-2,
+.contenedor7-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contenedor7-1:hover,
+.contenedor7-2:hover,
+.contenedor7-3:hover {
+  transform: translateY(-10px);
+}
+
+.contenedor7-imagen {
+  position: relative;
+  text-align: center;
+}
+
+.contenedor7-imagen p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.contenedor7-texto {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-link {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  padding: 10px 30px;
+  border: 2px solid #1c1c1c;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: #1c1c1c;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-link:hover {
+  color: #1c1c1c;
+  background: #fff;
+}
+
+/*octava parte 2° location*/
+.parallax-container-8 {
+  background-image: url("../img/fitness_bg4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: left;
+  padding: 150px;
+  z-index: 1;
+}
+
+.container8 h3 {
+  font-size: 30px;
+}
+
+.container8 h2 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.container8 h4 {
+  font-size: 20px;
+}
+
+/*novena parte galeria*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2f4f7;
+  margin-top: 5px;
+}
+
+.galeria img {
+  width: 100%;
+  transition: transform 0.4s;
+}
+
+.galeria .foto {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.galeria .foto:hover .img-hover {
+  transform: scale(1.2);
+}
+
+.galeria .foto .img-hover {
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.agrandar {
+  transform: scale(1.2) !important;
+}
+
+/*decima carrucel*/
+
+.carrousel {
+  width: 100%;
+  background-image: url(../img/fitness_bg5.jpg);
+}
+
+.conteCarrousel {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.conteCarrousel .itemCarrousel img {
+  height: 150px;
+  width: auto;
+}
+
+.itemCarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCarrouselArrows {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  font-size: 50px;
+}
+
+.itemCarrouselArrows > i:hover {
+  cursor: pointer;
+}
+
+.conteCarrouselController {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController > a {
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrows > a > i {
+  color: white;
+}
+
+.itemCarrouselTarjeta h2 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.itemCarrouselTarjeta h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.itemCarrouselTarjeta h4 {
+  font-size: 15px;
+  color: var(--rosa);
+}
+
+/*onceavo avon*/
+.encabezado11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.galeria2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.galeria2 .tx {
+  padding-left: 50px;
+}
+
+.galeria2 img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.galeria2 .foto2 {
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-hover2 {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.galeria2 .foto2 .img-hover2:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.oculto2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.oculto2 i {
+  padding: 10%;
+  justify-content: space-evenly;
+  position: relative;
+  top: 40%;
+}
+
+.oculto2 i :hover {
+  color: var(--rosa);
+}
+
+.agrandar2 {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.encabezado11 h1 {
+  font-size: 36px;
+}
+
+.galeria2 h4 {
+  font-size: 15px;
+  color: #1d1d20;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.galeria2 h2 {
+  font-size: 22px;
+  color: var(--rosa);
+}
+
+.galeria2 .estrellas {
+  color: gold;
+}
+
+.galeria2 i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/*doceavacards*/
+.encabezado12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.contenedor12 {
+  width: 100%;
+  background-image: url(../img/fitness_bg6.jpg);
+  background-position: center;
+  height: 80vh;
+  width: auto;
+}
+
+.contenedor12 .lasCards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor12 img {
+  height: auto;
+  width: 390px;
+  margin-bottom: 2%;
+  border-radius: 1%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  transition: clip-path 0.3s ease-in-out;
+}
+
+.contenedor12 img:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor12 .action-btn12 {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  padding: 10px 30px;
+  border: #1c1c1c 1px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #1c1c1c;
+}
+
+.action-btn12:hover {
+  color: #1c1c1c;
+  background: #fff;
+  border: 2px solid #1c1c1c;
+}
+
+.encabezado12 h2 {
+  font-size: 36px;
+  color: #1d1d20;
+}
+
+.card12 h4 {
+  font-size: 15px;
+}
+
+.card12 h3 {
+  font-size: 22px;
+}
+
+/* YouTube responsive */
+.youtube {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(254, 183, 91);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 183, 91, 1) 0%,
+    rgba(254, 223, 107, 1) 51%,
+    rgba(227, 111, 161, 1) 100%
+  );
+}
+
+.contenedor-video {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.video-youtube {
+  width: 100%;
+  height: 450px;
+}
+
+/*trece formulario*/
+.contenedor13 {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/fitness_bg7.webp);
+  width: 110%;
+  background-position: center;
+  height: 80vh;
+  width: auto;
+}
+
+.datos {
+  flex-direction: column;
+  width: 550px;
+  height: auto;
+  padding: 5%;
+}
+
+.datos i {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.mapa {
+  display: flex;
+  padding-top: 10%;
+  width: 350px;
+  height: auto;
+}
+
+.phone {
+  display: flex;
+  padding-top: 10%;
+  width: 350px;
+  height: auto;
+}
+.clock {
+  display: flex;
+  padding-top: 10%;
+  width: 350px;
+  height: auto;
+}
+.email {
+  display: flex;
+  padding-top: 10%;
+  width: 350px;
+  height: auto;
+}
+
+.formulario {
+  padding: 6%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 700px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #000;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.encabezado13 h2 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.datos p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.datos span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.datos i {
+  color: #fff;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+  background-color: #f3f5f7;
+}
+
+.tx-footer {
+  display: flex;
+  padding: 1%;
+}
+
+.footerb {
+  height: auto;
+  width: 110vh;
+  margin: 0%;
+}
+
+.logof {
+  height: auto;
+  width: 180px;
+  padding: 1%;
+}
+
+.iconof i {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.iconof i:hover {
+  color: var(--rosa);
+  cursor: pointer;
+}
+
+.tx-footer .home {
+  font-size: 13px;
+  color: #1d1d20;
+}
+
+.tx-footer span {
+  font-size: 13px;
+  color: #85838d;
+  padding: 10px;
+}
+
+.tx-footer span:hover {
+  color: #1d1d20;
+  cursor: pointer;
+}
+
+.Zemez span {
+  font-size: 13px;
+  color: #85838d;
+}
+
+.Zemez .z {
+  cursor: pointer;
+}
+
+.Zemez .z:hover {
+  color: var(--rosa);
+}
+
+/*modal*/
+.overlay {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 85%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 70px;
+  color: var(--rosa);
+}
+
+/*regreso*/
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: var(--rosa);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.scroll-to-top:hover {
+  background-color: white;
+  border: 1px solid var(--rosa);
+  color: var(--rosa);
+}
+
+.scroll-to-top i {
+  line-height: 50px;
+}
+
+.scroll-to-top i::before {
+  position: relative;
+  top: -1px;
+}

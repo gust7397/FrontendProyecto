@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/movil.css">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/74d6ebe007.js" crossorigin="anonymous"></script>
+    
+    <!-- Wow.js (si lo estás utilizando) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/logo.webp" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="portafolio.html">PORTAFOLIO</a></li>
+                <li>
+                    <a href="#">SERVICES <i class="fa-solid fa-angle-down" style="color: #817f8a;"></i></a>
+                    <ul>
+                        <li><a href="aerobic.html">AEROBIC</a></li>
+                        <li><a href="#">CROSSFIT</a></li>
+                        <li><a href="#">FITNESS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">TEAM <i class="fa-solid fa-angle-down" style="color: #817f8a;"></i></a>
+                    <ul>
+                        <li><a href="#">KAYLEIGH ROBERTS</a></li>
+                        <li><a href="#">KYLIE PINEHEILL</a></li>
+                        <li><a href="#">REBECA HOLL</a></li>
+                        <li><a href="#">NIKKIE SMITH</a></li>
+                        <li><a href="#">ROVENA NILLS</a></li>
+                        <li><a href="#">PETYR NOLAN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="icon-container">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fa-solid fa-search"></i>
+            <i class="fa-solid fa-shopping-cart"></i>
+            <i class="fa-solid fa-unlock"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </header>
+
+    <script src="js/main.js"></script>
+
+
+    <!-- Primera parte: Background -->
+    <section class="contenedor">
+        <div class="contenedor-tex">
+            <h2 class="titulo">GYM <span class="typed"></span> <br> NEW YORK</h2><br>
+            <p>Chantalle Fitness - place where your body gets its shape! Start <br> training now to stay fit and healthy
+                all
+                year round!</p><br>
+            <a href="#" class="btn-link activo">Learn more</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/main2.js"></script>
+
+
+    <!-- Aquí va el segundo bloque de solo texto -->
+    <div class="container2 wow fadeIn" data-wow-offset="100">
+        <div class="sub-contenedor">
+            <h2 class="animate__animated animate__bounce EXERCISE wow fadeIn" data-wow-offset="100">EXERCISE IN THE GYM</h2>
+            <br>
+            <span class="Check wow fadeIn" data-wow-offset="100">Check what we offer to our visitors and try all these
+                physical activities that keep your body <br> in great shape and your mind clear!</span>
+        </div>
+    </div>
+
+    <!-- Aqui va la caja con iconos -->
+    <div class="box-container wow fadeIn" data-wow-offset="100">
+        <div class="box">
+            <i class="fa-solid fa-dumbbell"></i><br>
+            <h4>Gym</h4>
+        </div>
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-person-running"></i>
+            <h4>Personal <br> Trainer</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-people-group"></i>
+            <h4>Group <br> Occupations</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-person-biking"></i>
+            <h4>Corporate <br> Fitness</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-shoe-prints"></i>
+            <h4>Aerobic <br> Classes</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-person-swimming fa-flip-horizontal"></i>
+            <h4>Pool</h4>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxes = document.querySelectorAll('.box');
+
+            boxes.forEach(box => {
+                box.addEventListener('mouseover', function () {
+                    this.classList.add('animate');
+                });
+
+                box.addEventListener('mouseout', function () {
+                    this.classList.remove('animate');
+                });
+            });
+        });
+    </script>
+
+
+    <!--Acordion-->
+    <div class="container4">
+        <div class="image-container4">
+            <img src="img/fitness_img1.webp" alt="Imagen">
+        </div>
+        <div class="content-container4">
+            <h2 class="animate__animated animate__bounce EXERCISE">THE PERSONAL TRAINER IS A <br> SAFE WORKOUT</h2><br>
+            <p>Want to be healthy and have a perfect body? Personal trainer is the right <br> decision for you! He will
+                create your personal training program and balance <br> your diet so you could get the shape of your
+                dream shortly!</p><br>
+            <div class="accordion">
+                <button class="accordion-btn"><i class="fa-solid fa-check"></i> Personal training program</button>
+                <div class="accordion-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni incidunt iste, provident eligendi
+                    omnis obcaecati quam quas corporis aspernatur fugit. Ut suscipit nulla, ea autem voluptatibus illum
+                    veniam nobis beatae.
+                </div>
+                <button class="accordion-btn"><i class="fa-solid fa-check"></i> Diet according to your needs</button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ipsam ab dolores veritatis. Iusto
+                    velit nihil aperiam sequi porro? Dolor laborum laudantium ullam magnam, officia veniam sequi cumque
+                    quibusdam ipsam.
+                </div>
+                <button class="accordion-btn"><i class="fa-solid fa-check"></i> Cardio and stretching</button>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor tempora maxime nam sapiente
+                    sed cupiditate amet corporis, sunt eos illo eligendi aspernatur iste exercitationem eaque ut nobis
+                    cumque non.
+                </div>
+            </div> <br>
+            <button class="btn-link">Learn more</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+            accordionButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const accordionContent = this.nextElementSibling;
+                    accordionContent.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- quinta parte 2° location con slider -->
+    <div class="slider-container">
+        <div class="slide" id="slide1">
+            <img src="img/fitness_bg1.jpg" alt="Imagen 1">
+            <div class="text">
+                <div class="container8">
+                    <h3>2nd Location in Opens</h3><br><br>
+                    <h2>15% OFF FOR ALL NEW ATTENDEES!</h2><br><br>
+                    <h4>We are happy to announce we are opening our second GYM! It is situated in Bronx and we welcome
+                        everybody to
+                        its opening!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <img src="img/fitness_bg2.jpg" alt="Imagen 2">
+            <div class="text">
+                <div class="container8">
+                    <h3>2nd Location in Opens</h3><br><br>
+                    <h2>15% OFF FOR ALL NEW ATTENDEES!</h2><br><br>
+                    <h4>We are happy to announce we are opening our second GYM! It is situated in Bronx and we welcome
+                        everybody
+                        to
+                        its opening!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <img src="img/fitness_bg4.jpg" alt="Imagen 3">
+            <div class="text">
+                <div class="container8">
+                    <h3>2nd Location in Opens</h3><br><br>
+                    <h2>15% OFF FOR ALL NEW ATTENDEES!</h2><br><br>
+                    <h4>We are happy to announce we are opening our second GYM! It is situated in Bronx and we welcome
+                        everybody
+                        to
+                        its opening!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide4">
+            <img src="img/fitness_bg6.jpg" alt="Imagen 4">
+            <div class="text">
+                <div class="container8">
+                    <h3>2nd Location in Opens</h3><br><br>
+                    <h2>15% OFF FOR ALL NEW ATTENDEES!</h2><br><br>
+                    <h4>We are happy to announce we are opening our second GYM! It is situated in Bronx and we welcome
+                        everybody
+                        to
+                        its opening!</h4>
+                </div>
+            </div>
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <script>
+        let currentSlide = 0; // Iniciamos desde el primer slide (0-index)
+        const slides = document.getElementsByClassName("slide");
+        const totalSlides = slides.length;
+        const intervalTime = 1500; // Cambia cada 1.5 segundos
+        let slideInterval;
+
+        function showSlide(n) {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            currentSlide = (n + totalSlides) % totalSlides; // Aseguramos que currentSlide esté en el rango correcto
+            slides[currentSlide].style.display = "block";
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        function startSlideInterval() {
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+            }, intervalTime);
+        }
+
+        function stopSlideInterval() {
+            clearInterval(slideInterval);
+        }
+
+        // Mostrar el primer slide al cargar la página
+        showSlide(currentSlide);
+
+        // Iniciar el cambio automático de slide
+        startSlideInterval();
+
+        // Detener el cambio automático cuando el mouse entra al contenedor del slider
+        document.querySelector(".slider-container").addEventListener("mouseenter", stopSlideInterval);
+
+        // Reanudar el cambio automático cuando el mouse sale del contenedor del slider
+        document.querySelector(".slider-container").addEventListener("mouseleave", () => {
+            startSlideInterval();
+        });
+    </script>
+
+
+    <!--sexta parte couching staff-->
+    <div class="container6">
+        <div class="container6-text">
+            <h3 class="">COACHING STAFF</h3><br><br>
+            <h2 class="">ANNA SMITH</h2><br>
+            <h4 class="">Finess Coach</h4><br><br>
+            <span class="">Anna is an award-winning fitness coach, Miss Olympia 2015, Fitness <br> Bikini 2016 and Best
+                Coach according to NY Fitness Association. She <br> is keen on sports and has very professional approach
+                to training <br> people. She puts emphasis on hard training with heavy weights at the <br> same time
+                paying much attention to cardio and stretching.</span><br><br>
+            <div class="icon-contenedor">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-pipe"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-pipe"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Septima parte fichas -->
+    <div class="contenedor7">
+        <h2>OUR CLASSES</h2>
+    </div>
+
+    <div class="contenedor-7">
+        <div class="contenedor7-1">
+            <div class="contenedor7-imagen animate__animated animate__bounce">
+                <img src="img/fitness_service1.webp" alt="Crossfit Image">
+                <p>CROSSFIT</p>
+            </div>
+            <div class="contenedor7-texto">
+                <span>Crossfit is a universal way of saving your <br> health and making your body strong.</span><br>
+                <button class="btn-link">Learn more</button>
+            </div>
+        </div>
+
+        <div class="contenedor7-2">
+            <div class="contenedor7-imagen animate__animated animate__bounce">
+                <img src="img/fitness_service2.webp" alt="Fitness Image">
+                <p>FITNESS</p>
+            </div>
+            <div class="contenedor7-texto">
+                <span>Fitness is necessary for everybody to train <br> your muscles and endurance.</span><br>
+                <button class="btn-link">Learn more</button>
+            </div>
+        </div>
+
+        <div class="contenedor7-3">
+            <div class="contenedor7-imagen animate__animated animate__bounce">
+                <img src="img/fitness_service3.webp" alt="Aerobic Image">
+                <p>AEROBIC</p>
+            </div>
+            <div class="contenedor7-texto">
+                <span>Aerobic is the perfect activity for women to <br> stay fit and healthy.</span><br>
+                <button class="btn-link">Learn more</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Octava parte 2° location -->
+    <div class="parallax-container-8">
+        <div class="container8">
+            <h3>2nd Location in Opens</h3><br><br>
+            <h2>15% OFF FOR ALL NEW ATTENDEES!</h2><br><br>
+            <h4>We are happy to announce we are opening our second GYM! It is situated in Bronx and we welcome everybody
+                to
+                its opening!</h4>
+        </div>
+    </div>
+
+
+    <!--novena parte galeria-->
+    <div class="contenedor9">
+        <div class="galeria">
+            <div class="foto">
+                <a href="img/fitness_gallery1.jpg" data-lightbox="gallery" data-title="Image 1">
+                    <img class="img-hover" src="img/fitness_gallery1.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery2.jpg" data-lightbox="gallery" data-title="Image 2">
+                    <img class="img-hover" src="img/fitness_gallery2.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery3.jpg" data-lightbox="gallery" data-title="Image 3">
+                    <img class="img-hover" src="img/fitness_gallery3.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery4.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <img class="img-hover" src="img/fitness_gallery4.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery5.jpg" data-lightbox="gallery" data-title="Image 5">
+                    <img class="img-hover" src="img/fitness_gallery5.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery6.jpg" data-lightbox="gallery" data-title="Image 6">
+                    <img class="img-hover" src="img/fitness_gallery6.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery7.jpg" data-lightbox="gallery" data-title="Image 7">
+                    <img class="img-hover" src="img/fitness_gallery7.jpg" alt="1">
+                </a>
+            </div>
+
+            <div class="foto">
+                <a href="img/fitness_gallery8.jpg" data-lightbox="gallery" data-title="Image 8">
+                    <img class="img-hover" src="img/fitness_gallery8.jpg" alt="1">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Aplicar Lightbox al hacer clic en la imagen
+            $('.foto a').on('click', function (e) {
+                e.preventDefault(); // Prevenir la acción predeterminada del enlace
+                $(this).ekkoLightbox(); // Activar Lightbox
+            });
+
+            // Mostrar ícono de aumento solo cuando el mouse está sobre la imagen
+            $('.foto').hover(
+                function () {
+                    $(this).find('.oculto').fadeIn();
+                },
+                function () {
+                    $(this).find('.oculto').fadeOut();
+                }
+            );
+        });
+    </script>
+
+
+    <!--decima parte carrusel-->
+    <div class="carrousel-container">
+        <div class="carrousel">
+            <div class="conteCarrousel">
+
+                <div class="itemCarrousel" id="itemCarrousel-1">
+                    <div class="itemCarrouselTarjeta">
+                        <h2>WHAT PEOPLE SAY ?</h2><br><br>
+                        <img src="img/06.webp" alt=""><br><br>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in incidunt placeat itaque
+                            suscipit,<br> tempora aliquam unde impedit et quo explicabo blanditiis earum modi <br>
+                            reiciendis molestias velit nihil similique quibusdam!</h3><br><br>
+                        <h4>Adam Smith</h4>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-2" class="arrow-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-2" class="arrow-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrousel" id="itemCarrousel-2">
+                    <div class="itemCarrouselTarjeta">
+                        <h2>WHAT PEOPLE SAY ?</h2><br><br>
+                        <img src="img/04.webp" alt=""><br><br>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in incidunt placeat itaque
+                            suscipit,<br> tempora aliquam unde impedit et quo explicabo blanditiis earum modi <br>
+                            reiciendis molestias velit nihil similique quibusdam!</h3>
+                        <br><br>
+                        <h4>Adam Smith</h4>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-1" class="arrow-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-1" class="arrow-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrousel" id="itemCarrousel-3">
+                    <div class="itemCarrouselTarjeta">
+                        <h2>WHAT PEOPLE SAY ?</h2><br><br>
+                        <img src="img/04.webp" alt=""><br><br>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in incidunt placeat itaque
+                            suscipit,<br> tempora aliquam unde impedit et quo explicabo blanditiis earum modi <br>
+                            reiciendis molestias velit nihil similique quibusdam!</h3>
+                        <br><br>
+                        <h4>Adam Smith</h4>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-1" class="arrow-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-1" class="arrow-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteCarrouselController">
+                <a href="#itemCarrousel-1" class="carousel-dot">•</a>
+                <a href="#itemCarrousel-2" class="carousel-dot">•</a>
+                <a href="#itemCarrousel-3" class="carousel-dot">•</a>
+            </div>
+        </div>
+
+
+        <!--onceava parte venta de avon-->
+        <div class="contenedor11">
+            <div class="encabezado11">
+                <h1>SPORTS NUTRITION</h1>
+            </div>
+
+            <div class="galeria2">
+                <div class="foto2">
+                    <img class="img-hover2" src="img/product1-400x400.webp" alt="1">
+                    <div class="oculto2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="tx">
+                        <h4>BCAA 8-1-1 Complex SS</h4>
+                        <h2>$55.00 $45.00</h2>
+                        <div class="estrellas">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="foto2">
+                    <img class="img-hover2" src="img/product2-400x400.webp" alt="1">
+                    <div class="oculto2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="tx">
+                        <h4>100% Whey Hydro Isolate SS</h4>
+                        <h2>$28.10</h2>
+                    </div>
+                </div>
+                <div class="foto2">
+                    <img class="img-hover2" src="img/product3-400x400.webp" alt="1">
+                    <div class="oculto2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="tx">
+                        <h4>Xtreme Whey Protein SS</h4>
+                        <h2>$25.00 – $35.00</h2>
+                    </div>
+                </div>
+                <div class="foto2">
+                    <img class="img-hover2" src="img/product4-400x400.webp" alt="1">
+                    <div class="oculto2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="tx">
+                        <h4>Xcore Creatine Micronized 500g</h4>
+                        <h2>$19.50</h2>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+            <script>
+                $(document).ready(function () {
+
+                    $('.foto2').hover(function () {
+                        $(this).find('.oculto2').fadeIn();
+                        $(this).find('.img-hover2').addClass('agrandar2');
+                    }, function () {
+                        $(this).find('.oculto2').fadeOut(); $(this).find('.img-hover2').removeClass('agrandar2');
+                    })
+
+                })
+            </script>
+        </div>
+
+
+
+        <!--doceava parte cards especiales XD-->
+        <div class="contenedor12">
+            <div class="encabezado12">
+                <h2>WORLD OF GYM</h2>
+            </div>
+            <div class="lasCards">
+                <div class="card12">
+                    <img src="img/fitness_gallery5.jpg" alt="">
+                    <h4>FEBRUARY 21, 2022</h4>
+                    <h3>What Discipline Means?</h3>
+                    <h4>Most of us can agree that discipline is one of the <br> most important...</h4><br>
+                    <button class="btn-link">Learn more</button>
+                </div>
+
+                <div class="card12">
+                    <img src="img/fitness_gallery6.jpg" alt="">
+                    <h4>FEBRUARY 21, 2022</h4>
+                    <h3>What Discipline Means?</h3>
+                    <h4>Most of us can agree that discipline is one of the <br> most important...</h4><br>
+                    <button class="btn-link">Learn more</button>
+                </div>
+
+                <div class="card12">
+                    <img src="img/fitness_gallery3.jpg" alt="">
+                    <h4>FEBRUARY 21, 2022</h4>
+                    <h3>What Discipline Means?</h3>
+                    <h4>Most of us can agree that discipline is one of the <br> most important...</h4><br>
+                    <button class="btn-link">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contenedor del video -->
+        <section class="youtube">
+            <div class="contenedor-video">
+                <iframe class="video-youtube" src="https://www.youtube.com/embed/4xzvk7VZzjc" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <!--Trescava parte formulario-->
+        <div class="contenedor13">
+            <div class="datos">
+                <div class="encabezado13">
+                    <h2>CONTACT WITH US</h2>
+                </div>
+
+                <div class="mapa">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="tx">
+                        <p>Address:</p>
+                        <span>4578 Marmora Road, Glasgow</span>
+                    </div>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="tx">
+                        <p>Phones:</p>
+                        <span>+7-495-1234567; +7-495-1234568</span>
+                    </div>
+                </div>
+                <div class="clock">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="tx">
+                        <p>Working time:</p>
+                        <span>Monday–Sunday: 08:00–22:00;</span>
+                    </div>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="tx">
+                        <p>Email:</p>
+                        <span>info@demolink.org</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <form>
+                    <label for="opcion1"></label><br>
+                    <input type="text" id="opcion1" name="opcion1" placeholder="Name: Enter your name"><br><br>
+
+                    <label for="opcion2"></label><br>
+                    <input type="text" id="opcion2" name="opcion2" placeholder="Email: Enter your email"><br><br>
+
+                    <label for="opcion3"></label><br>
+                    <input type="text" id="opcion3" name="opcion3" placeholder="Phone: Enter your Phone"><br><br>
+
+                    <label for="opcion4"></label><br>
+                    <input type="text" id="opcion4" name="opcion4" placeholder="Massage: Enter your massage"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+
+
+
+        <!--footer-->
+        <div class="footer">
+            <img class="footerb" src="img/fitness_bg8.webp" alt="footer">
+            <img class="logof" src="img/footer-logo.webp" alt="logo">
+            <div class="tx-footer">
+                <span class="home">HOME</span>
+                <span>SERVICE</span>
+                <span>SHOP</span>
+                <span>TEAM</span>
+                <span>MEMBERS</span>
+                <span>PORTFOLIO</span>
+            </div>
+            <div class="iconof">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-pipe"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-pipe"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-pipe"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="Zemez">
+                <span class="z">Zemez</span><span> ©. All rights reserved.</span>
+            </div>
+        </div>
+
+
+        <!-- Botón de desplazamiento al principio -->
+        <div id="scroll-to-top" class="scroll-to-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <!-- Fin del contenido de tu página -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var scrollToTopButton = document.getElementById('scroll-to-top');
+
+                // Mostrar el botón cuando el usuario ha bajado cierta cantidad
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopButton.style.display = "block";
+                    } else {
+                        scrollToTopButton.style.display = "none";
+                    }
+                };
+
+                // Desplazamiento suave al principio de la página
+                scrollToTopButton.addEventListener('click', function () {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                });
+            });
+        </script>
+
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Modal -->
+        <div class="modal" id="myModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="contenedor13">
+                <div class="datos">
+                    <div class="encabezado13">
+                        <h2>CONTACT WITH US</h2>
+                    </div>
+
+
+
+                    <div class="formulario">
+                        <form>
+                            <label for="opcion1"></label><br>
+                            <input type="text" id="opcion1" name="opcion1" placeholder="Name: Enter your name"><br><br>
+
+                            <label for="opcion2"></label><br>
+                            <input type="text" id="opcion2" name="opcion2"
+                                placeholder="Email: Enter your email"><br><br>
+
+                            <label for="opcion3"></label><br>
+                            <input type="text" id="opcion3" name="opcion3"
+                                placeholder="Phone: Enter your Phone"><br><br>
+
+                            <label for="opcion4"></label><br>
+                            <input type="text" id="opcion4" name="opcion4"
+                                placeholder="Massage: Enter your massage"><br><br>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        setTimeout(function () {
+                            document.getElementById('overlay').style.display = 'block';
+                            document.getElementById('overlay').style.opacity = 0.8;
+                            document.getElementById('myModal').style.display = 'block';
+                        }, 1000);
+
+                        // Agregar evento de clic al botón
+                        document.querySelector('.btn-link.activo').addEventListener('click', function (event) {
+                            event.preventDefault(); // Para evitar que el enlace siga el href
+                            openModal();
+                        });
+                    });
+
+                    function openModal() {
+                        document.getElementById('overlay').style.display = 'block';
+                        document.getElementById('overlay').style.opacity = 0.8;
+                        document.getElementById('myModal').style.display = 'block';
+                    }
+
+                    function closeModal() {
+                        document.getElementById('overlay').style.display = 'none';
+                        document.getElementById('overlay').style.opacity = 0;
+                        document.getElementById('myModal').style.display = 'none';
+                    }
+                </script>
+
+
+
+<script>
+    new WOW({
+        offset: 100,
+    }).init();
+</script>
+
+
+</body>
+
+</html>
